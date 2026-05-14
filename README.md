@@ -38,31 +38,47 @@ The dashboard serves as the visualization and persistence layer, built using the
 *   **Web Technologies**: `Next.js 15`, `React 19`, `Tailwind CSS 4`, `Framer Motion`, `Lucide React`, `Bootstrap 5`.
 *   **Data Handling**: UUID-based report storage with server-side rendering for persistent result sharing.
 
-## Installation and Usage
+## Installation and Setup
 
-### Prerequisites
-*   Python 3.9 or higher
-*   Node.js 18 or higher
+The SB Detector ecosystem requires both the web dashboard and the Python CLI to be configured for the full interactive experience.
 
-### Setting Up the CLI
-Navigate to the `audit-pulse` directory and install the package locally:
-```bash
-pip install .
-```
+### 1. Web Dashboard Setup (Next.js)
+The dashboard acts as the central hub for viewing reports. 
+1.  Navigate to the `project-auditor` directory.
+2.  Install dependencies: `npm install`
+3.  Start the development server: `npm run dev`
+4.  The dashboard will be available at `http://localhost:3000`.
 
-### Starting the Web Dashboard
-Navigate to the `project-auditor` directory, install dependencies, and run the development server:
-```bash
-npm install
-npm run dev
-```
+### 2. Python CLI Installation (SB Detector Tool)
+The CLI tool is what performs the actual scanning on your machine. To install it as a global command on your PC:
 
-### Running an Audit
-Once the dashboard is active (default: `localhost:3000`), run the CLI from any project directory:
-```bash
-audit-pulse .
-```
-Upon completion, the CLI will provide a summary in the terminal and a prompt to open the full interactive report in your default web browser.
+1.  **Ensure Python is installed**: Open your terminal/command prompt and type `python --version`. You need version 3.9 or higher.
+2.  **Navigate to the tool directory**:
+    ```bash
+    cd audit-pulse
+    ```
+3.  **Install the package**: This will install all dependencies (`click`, `rich`, `requests`, etc.) and register the `audit-pulse` command.
+    ```bash
+    pip install .
+    ```
+    *Note: If you are on a Mac/Linux and encounter permission issues, use `pip install -e .` or `pip install --user .`*
+
+4.  **Verification**: Type `audit-pulse --help` in your terminal. If you see the SB Detector help menu, the installation was successful.
+
+## How to Run a Scan
+
+1.  **Open the Web Dashboard**: Make sure your Next.js server is running (`npm run dev`).
+2.  **Navigate to any project**: Open a new terminal and go to the directory of the project you want to audit.
+3.  **Initiate Scan**: Run the following command:
+    ```bash
+    audit-pulse .
+    ```
+4.  **Interactive Experience**:
+    *   The CLI will display a **SB Detector CLI** panel with a progress bar.
+    *   It will perform a deep scan of your files and network status.
+    *   A summary table will appear in your terminal showing detected issues.
+    *   **Prompt**: The tool will ask: `Do you want to view the full interactive report in your browser? [Y/n]`.
+    *   Press **Y** to automatically open the luxury web report on your dashboard.
 
 ---
 © 2026 SB Detector Engineering. Engineered for precision and reliability.
