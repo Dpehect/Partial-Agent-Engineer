@@ -15,10 +15,10 @@ WEB_BASE_URL = "http://localhost:3000/report"
 @click.command()
 @click.argument('path', default='.', type=click.Path(exists=True))
 def cli(path):
-    """🚀 AuditPulse: Professional Full-Stack Project Auditor"""
+    """🚀 SB Detector: Professional Full-Stack Project Auditor"""
     
     console.print(Panel.fit(
-        "[bold blue]AuditPulse CLI[/bold blue]\n[dim]Analyzing project health...[/dim]",
+        "[bold white]SB Detector CLI[/bold white]\n[dim]Analyzing project health...[/dim]",
         border_style="blue"
     ))
 

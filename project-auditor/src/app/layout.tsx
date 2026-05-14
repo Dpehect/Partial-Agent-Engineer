@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AuditMaster | AI-Powered Project Auditor",
+  title: "SB Detector | AI-Powered Project Auditor",
   description: "Check your project health across Frontend, SEO, and Security in seconds.",
 };
 

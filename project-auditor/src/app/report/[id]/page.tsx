@@ -202,7 +202,7 @@ export default function ReportPage() {
           
           <footer className="mt-60 text-center py-24 border-t border-white/5">
             <div className="text-gray-600 text-[12px] font-bold uppercase tracking-[0.8em]">
-              © 2026 AUDITMASTER — CLOUD DIAGNOSTIC ENGINE V2.1_GOLD
+              © 2026 SB DETECTOR — CLOUD DIAGNOSTIC ENGINE V2.0
             </div>
           </footer>
         </div>

@@ -64,7 +64,7 @@ export default function Home() {
           <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg">
             <Zap size={20} className="text-white fill-white" />
           </div>
-          <span className="text-2xl font-bold tracking-tight text-white">AuditMaster</span>
+          <span className="text-2xl font-bold tracking-tight text-white">SB Detector</span>
         </div>
         <div className="flex bg-white/5 p-1 rounded-2xl backdrop-blur-md border border-white/10">
           <button 
@@ -169,7 +169,7 @@ export default function Home() {
           <span>Zero Configuration</span>
           <span>Cloud Diagnostic</span>
         </div>
-        <div>© 2026 AUDITMASTER — REIMAGINED BY ANTIGRAVITY</div>
+        <div>© 2026 SB DETECTOR — REIMAGINED BY ANTIGRAVITY</div>
       </footer>
     </main>
   );

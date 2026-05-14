@@ -1,19 +1,19 @@
-# AuditPulse: Full-Stack Diagnostic Ecosystem
+# SB Detector: Full-Stack Diagnostic Ecosystem
 
-AuditPulse is an integrated software suite designed for automated project health assessment. It combines a local Python-based command-line interface with a high-performance web dashboard to provide developers with deep insights into their code's security, SEO, and structural integrity.
+SB Detector is an integrated software suite designed for automated project health assessment. It combines a local Python-based command-line interface with a high-performance web dashboard to provide developers with deep insights into their code's security, SEO, and structural integrity.
 
 ## Architecture
 
 The system is split into İki primary components that work in tandem:
 
-### 1. AuditPulse CLI (Python Engine)
+### 1. SB Detector CLI (Python Engine)
 The CLI acts as the data collection layer. It performs static analysis on local directories and live URL scanning. 
 
 *   **Static Analysis**: Scans source code for sensitive information (API keys, secrets), unsafe functions (e.g., `gets()` in C), and misconfigurations (e.g., unignored `.env` or `node_modules` files).
 *   **Network Scanning**: Uses BeautifulSoup4 and Requests to analyze live web pages for SEO metadata, semantic hierarchy, and accessibility standards.
 *   **Data Orchestration**: Findings are serialized into JSON and transmitted to the web dashboard via secure POST requests.
 
-### 2. AuditPulse Dashboard (Next.js 15 Framework)
+### 2. SB Detector Dashboard (Next.js 15 Framework)
 The dashboard serves as the visualization and persistence layer, built using the latest web technologies.
 
 *   **Framework**: Next.js 15 App Router with React 19.
@@ -65,4 +65,4 @@ audit-pulse .
 Upon completion, the CLI will provide a summary in the terminal and a prompt to open the full interactive report in your default web browser.
 
 ---
-© 2026 AuditPulse Engineering. Engineered for precision and reliability.
+© 2026 SB Detector Engineering. Engineered for precision and reliability.
