@@ -2,8 +2,9 @@
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://partial-agent-engineer-7glo.vercel.app)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/Dpehect/Partial-Agent-Engineer.git)
+[![Hackathon Win](https://img.shields.io/badge/Recognition-1st_Place_Hackathon_China-gold)](https://github.com/Dpehect/Partial-Agent-Engineer.git)
 
-SB Detector is an integrated software suite designed for automated project health assessment. It combines a local Python-based command-line interface with a high-performance web dashboard to provide developers with deep insights into their code's security, SEO, and structural integrity.
+SB Detector is an integrated software suite designed for automated project health assessment. **This project was awarded 1st Place at a local Agent Engineering Hackathon in China for its innovative approach to automated code diagnostics.**
 
 ## Architecture
 
